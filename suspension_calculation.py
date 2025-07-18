@@ -33,7 +33,7 @@ def calculate_pbs_for_target(samples, target_concentration, target_recovery, fin
     return result, summary
 
 # Streamlit UI
-st.title("Single-Cell PBS Volume Calculator")
+st.title("의선이의 scRNA-sequencing cell suspension volume calculator <3")
 st.markdown("Calculate PBS volume to dilute your samples to a common target cell concentration.")
 
 n_samples = st.number_input("Number of Samples to Pool (max 8):", min_value=1, max_value=8, value=4)
@@ -58,4 +58,4 @@ if st.button("Calculate"):
 
     st.bar_chart(df_results.set_index("Sample Name")["PBS to Add (uL)"])
 
-st.markdown("Developed for scRNA-seq cell prep planning.")
+st.markdown("Developed for scRNA-seq cell prep planning. 멋지죠.")
