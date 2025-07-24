@@ -37,7 +37,7 @@ st.title("의선이의 scRNA-sequencing cell suspension volume calculator <3")
 st.markdown("Calculate PBS volume to dilute your samples to a common target cell concentration.")
 
 n_samples = st.number_input("Number of Samples to Pool (max 8):", min_value=1, max_value=8, value=4)
-target_concentration = st.number_input("Target Cell Concentration (cells/μL):", min_value=1000, max_value=2000, value=1300)
+target_concentration = st.number_input("Target Cell Concentration (cells/μL):", min_value=200, max_value=2000, value=1300)
 target_recovery = st.number_input("Target Cell Recovery (total cells):", min_value=10000, max_value=20000, value=20000)
 
 samples = []
